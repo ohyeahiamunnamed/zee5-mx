@@ -9,7 +9,7 @@ client = TelegramClient('anfghohn', int(os.environ.get("APP_ID" )), os.environ.g
 @client.on(events.NewMessage(pattern='/start'))
 async def handler(event):
     chat = await event.get_chat()
-    await client.send_message(chat,"""💁hey i am created by infinitrocyber subscribe my channel https://m.youtube.com/channel/UCLHZQApnu1vN2j7fKDgv74w 👍👍👍👍👍👍
+    await client.send_message(chat,"""💁hey i am @Baby_xD
     i support zee5 and mx player-movies full mx player later develop send me mx players like https://www.mxplayer.in/movie/ba472677b661a6d09ab73f47d33c0c90 """)
     
 
@@ -29,7 +29,7 @@ async def handler(event):
     g1 = (r1["hls"][0].replace("drm", "hls") + req1["video_token"])
    # await client.send_file(chat,r1["image_url"],caption = r1["title"])
     markup = client.build_reply_markup(Button.url("stream",urls.stream_baseurl+g1))
-    await client.send_message(chat, "support @urlicupload    "+" TITLE:"+r1["title"]+"   DESCRIPTION:"+r1["description"],file=r1["image_url"], buttons=markup)
+    await client.send_message(chat, "Play Boy @Baby_xD    "+" TITLE:"+r1["title"]+"   DESCRIPTION:"+r1["description"],file=r1["image_url"], buttons=markup)
             
             #rgx = w
    # await client.send_message(chat, g1)
@@ -42,7 +42,7 @@ async def handler(event):
     A =requests.get("https://api.mxplay.com/v1/web/detail/video?type=movie&id="+link+"&platform=com.mxplay.desktop&device-density=2&userid=30bb09af-733a-413b-b8b7-b10348ec2b3d&platform=com.mxplay.mobile&content-languages=hi,en,ta").json()
     chat = await event.get_chat()
     markup = client.build_reply_markup(Button.url("stream",video_d+A["stream"]['hls']['high']))
-    await client.send_message(chat," support @urlicupload   "+A["title"],buttons=markup)
+    await client.send_message(chat," Play Boy @Baby_xD  "+A["title"],buttons=markup)
     print(A)
     print(link)
 @client.on(events.NewMessage(pattern='(?i)https://www.hotstar.com/in/'))
