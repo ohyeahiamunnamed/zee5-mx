@@ -9,8 +9,8 @@ client = TelegramClient('anfghohn', int(os.environ.get("APP_ID" )), os.environ.g
 @client.on(events.NewMessage(pattern='/start'))
 async def handler(event):
     chat = await event.get_chat()
-    await client.send_message <b>(chat,"""💁 HELLO 💙 Decoded @Baby_xD \n\n🔗 Send Me: Zee5 & MX player Movies links, I will give there 👩‍💻 streaming links. \n\n⭕️ Mx Players link format: \n\n✅ https://www.mxplayer.in/movie/039664d4d85c603cfb5a6cd66b9e29ec \n\n ❌ https://www.mxplayer.in/movie/xzy-name-movie-039664d4d85c603cfb5a6cd66b9e29ec
- """)</b>
+    await client.send_message (chat,"""💁 HELLO 💙 Decoded @Baby_xD \n\n🔗 Send Me: Zee5 & MX player Movies links, I will give there 👩‍💻 streaming links. \n\n⭕️ Mx Players link format: \n\n✅ https://www.mxplayer.in/movie/039664d4d85c603cfb5a6cd66b9e29ec \n\n ❌ https://www.mxplayer.in/movie/xzy-name-movie-039664d4d85c603cfb5a6cd66b9e29ec
+ """)
     
 
 @client.on(events.NewMessage(pattern='(?i)https://www.zee5.com'))
